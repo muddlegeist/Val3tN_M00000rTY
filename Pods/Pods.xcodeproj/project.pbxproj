@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		061169C1DDD4914E9D85CDB77DE38780 /* Valet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 517CDD75407507FF3E23785CE939199C /* Valet-dummy.m */; };
+		0AABEE27273EE932B7E152E05149DEDF /* Pods-ValetAndMorty-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01DC3E6DF9F6C9F4D4EF26D36AF3E33D /* Pods-ValetAndMorty-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B50B306C494C2D0EA34C736FF78FA9F /* SecureEnclave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982E22CDD61A66B3208E9180D42084A5 /* SecureEnclave.swift */; };
+		119FEB43819A01F9F47ED6A09B049AC1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EAFD42FDF4C74570AA9B75BA6001AB /* Service.swift */; };
+		1BD2781467C9A60938E3968489130E79 /* Valet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F40C17C30339A7441CDDBD4493E41C81 /* Valet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38AB459AC6619B9AD09422128E1E23A1 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFFAA23E6870890BBBD0DE4A80FA7C6 /* Configuration.swift */; };
+		3D699493C537B0B95B2726AFE8FD2A92 /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E793FEF869C4972D888A10576584DD7 /* Accessibility.swift */; };
+		3E249788B9B5E347BA6B0A3FA08C32EC /* SecItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288BCCF3DB358031974C7F8BC184A0CA /* SecItem.swift */; };
+		43ACCC3CFCB056BCA32109BAFEEBF132 /* Pods-ValetAndMorty-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5EC299A52DBFF0517AD320ED176548 /* Pods-ValetAndMorty-dummy.m */; };
+		4B33D56AB8B017A2116DCECD37E4C503 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		4F4ED1E1B86D654531B101B1353B19FB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */; };
+		56F6ACFD2DDBF0C199B1455DA37F5ADA /* CloudAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C0D3DF570A75F00D18361BCD7A5A7 /* CloudAccessibility.swift */; };
+		5C5A60A06B791D64C36AC3A2D56FF6A8 /* Valet.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E45D5529E8B229EE523C1DE4CA22B9 /* Valet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		758898215E286EDCF8356A840A46F7FB /* SecureEnclaveAccessControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8696156976F696C7536CF6E59330DDBF /* SecureEnclaveAccessControl.swift */; };
+		90106BF996996A6B99DD1ED1DA5686F6 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7C8864C21E1A9D5B08604AA5ABA37 /* ErrorHandler.swift */; };
+		967EA8A2B5A551B2736738EBE622A932 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC071C6D5C37D9E3169E0C89153094 /* Keychain.swift */; };
+		A236ECA0ED0DCE032D497EC0A96BF681 /* SecureEnclaveSinglePromptValet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1934739399E6A4D8F7AB3D764E2BA660 /* SecureEnclaveSinglePromptValet.swift */; };
+		AE75A651B941BEF0D859B7F2DA296EF4 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6D3A1B8F5E82CDE9C306FC97A7593 /* Identifier.swift */; };
+		B728A4D9ED0C2F156E8159E22BB779EB /* MigrationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FE44C14B668B73BF07D29C3E5F727B /* MigrationResult.swift */; };
+		C6B65537D061C8ABDEE0517224E50B2F /* SecureEnclaveValet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60079601392647811B533766ECF944E /* SecureEnclaveValet.swift */; };
+		D4F926E05B9433CCC5EDF9D53201E76E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		DE4E6DB797408814E97674FFB0B5CFB5 /* KeychainQueryConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69AB4720E52E2567C67A6C9B8BB367F /* KeychainQueryConvertible.swift */; };
+		ED57B7FC5380A09EAC8F8C26BB2E2F20 /* Valet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16BA33B68FB350674D07775F5CA8B2 /* Valet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C44B3BF460B15664D230A3AC380C947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93B2C46406E0BD9F7A6CF02267D31D76;
+			remoteInfo = Valet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01DC3E6DF9F6C9F4D4EF26D36AF3E33D /* Pods-ValetAndMorty-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ValetAndMorty-umbrella.h"; sourceTree = "<group>"; };
+		0E793FEF869C4972D888A10576584DD7 /* Accessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Accessibility.swift; path = Sources/Accessibility.swift; sourceTree = "<group>"; };
+		11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		18A7C8864C21E1A9D5B08604AA5ABA37 /* ErrorHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorHandler.swift; path = Sources/ErrorHandler.swift; sourceTree = "<group>"; };
+		1934739399E6A4D8F7AB3D764E2BA660 /* SecureEnclaveSinglePromptValet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclaveSinglePromptValet.swift; path = Sources/SecureEnclaveSinglePromptValet.swift; sourceTree = "<group>"; };
+		194F98D01FAC3C377CFEF15AE0ADEDE3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		288BCCF3DB358031974C7F8BC184A0CA /* SecItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecItem.swift; path = Sources/Internal/SecItem.swift; sourceTree = "<group>"; };
+		2980DC2A1361239A98BA94AD66EC4195 /* Valet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Valet.framework; path = Valet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34485544AF714461462A3E3F0D081B16 /* Pods-ValetAndMorty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValetAndMorty.debug.xcconfig"; sourceTree = "<group>"; };
+		3A40595CE5293BEF7DF32A8EA814F570 /* Pods-ValetAndMorty-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ValetAndMorty-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3E3C5EAE61562797A8BA6EF38CF56424 /* Pods-ValetAndMorty.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ValetAndMorty.modulemap"; sourceTree = "<group>"; };
+		423C0D3DF570A75F00D18361BCD7A5A7 /* CloudAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloudAccessibility.swift; path = Sources/CloudAccessibility.swift; sourceTree = "<group>"; };
+		45E6D3A1B8F5E82CDE9C306FC97A7593 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Sources/Identifier.swift; sourceTree = "<group>"; };
+		4AFFE523B92A56DBA3FDF4F4E352EED2 /* Pods_ValetAndMorty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ValetAndMorty.framework; path = "Pods-ValetAndMorty.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FE44C14B668B73BF07D29C3E5F727B /* MigrationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MigrationResult.swift; path = Sources/MigrationResult.swift; sourceTree = "<group>"; };
+		517CDD75407507FF3E23785CE939199C /* Valet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Valet-dummy.m"; sourceTree = "<group>"; };
+		58C90312CFF221EE986012A8BB481792 /* Pods-ValetAndMorty-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ValetAndMorty-frameworks.sh"; sourceTree = "<group>"; };
+		70DC071C6D5C37D9E3169E0C89153094 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Sources/Internal/Keychain.swift; sourceTree = "<group>"; };
+		70E4D90EA8412A790378DEB3F2327CC8 /* Valet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Valet.xcconfig; sourceTree = "<group>"; };
+		7DFFAA23E6870890BBBD0DE4A80FA7C6 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Internal/Configuration.swift; sourceTree = "<group>"; };
+		7F5EC299A52DBFF0517AD320ED176548 /* Pods-ValetAndMorty-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ValetAndMorty-dummy.m"; sourceTree = "<group>"; };
+		80EAFD42FDF4C74570AA9B75BA6001AB /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = Sources/Internal/Service.swift; sourceTree = "<group>"; };
+		8696156976F696C7536CF6E59330DDBF /* SecureEnclaveAccessControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclaveAccessControl.swift; path = Sources/SecureEnclaveAccessControl.swift; sourceTree = "<group>"; };
+		879F52468D51615D70F233D7F31C2714 /* Valet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		982E22CDD61A66B3208E9180D42084A5 /* SecureEnclave.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclave.swift; path = Sources/SecureEnclave.swift; sourceTree = "<group>"; };
+		9B445EF0CCA7A1136B8FF5B0A6C56026 /* Valet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Valet.modulemap; sourceTree = "<group>"; };
+		AB9CC8784077DEB305C69E480D6ACF01 /* Pods-ValetAndMorty-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ValetAndMorty-resources.sh"; sourceTree = "<group>"; };
+		ABEB4A174E30622BD632AEEACD246D31 /* Pods-ValetAndMorty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValetAndMorty.release.xcconfig"; sourceTree = "<group>"; };
+		B1C9A6A6BB27529A44B0107A9D853741 /* Pods-ValetAndMorty-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValetAndMorty-acknowledgements.plist"; sourceTree = "<group>"; };
+		B69AB4720E52E2567C67A6C9B8BB367F /* KeychainQueryConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainQueryConvertible.swift; path = Sources/KeychainQueryConvertible.swift; sourceTree = "<group>"; };
+		C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		EEB4A7B5B9BEC141DD661178EF544BBA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F40C17C30339A7441CDDBD4493E41C81 /* Valet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-umbrella.h"; sourceTree = "<group>"; };
+		F60079601392647811B533766ECF944E /* SecureEnclaveValet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclaveValet.swift; path = Sources/SecureEnclaveValet.swift; sourceTree = "<group>"; };
+		F8E45D5529E8B229EE523C1DE4CA22B9 /* Valet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Valet.h; path = Sources/Valet.h; sourceTree = "<group>"; };
+		FC16BA33B68FB350674D07775F5CA8B2 /* Valet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Valet.swift; path = Sources/Valet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F6A53FF581BCD0FD8F3FBB707BB697A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B33D56AB8B017A2116DCECD37E4C503 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59B0CF617338D7B8AA141CB89051109 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F926E05B9433CCC5EDF9D53201E76E /* Foundation.framework in Frameworks */,
+				4F4ED1E1B86D654531B101B1353B19FB /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BD38C06370CBB0F2DE8EC0DF95546E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AFFE523B92A56DBA3FDF4F4E352EED2 /* Pods_ValetAndMorty.framework */,
+				2980DC2A1361239A98BA94AD66EC4195 /* Valet.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D5FB3C58F55DADFD5FF7ECF038B5C60 /* Valet */ = {
+			isa = PBXGroup;
+			children = (
+				0E793FEF869C4972D888A10576584DD7 /* Accessibility.swift */,
+				423C0D3DF570A75F00D18361BCD7A5A7 /* CloudAccessibility.swift */,
+				7DFFAA23E6870890BBBD0DE4A80FA7C6 /* Configuration.swift */,
+				18A7C8864C21E1A9D5B08604AA5ABA37 /* ErrorHandler.swift */,
+				45E6D3A1B8F5E82CDE9C306FC97A7593 /* Identifier.swift */,
+				70DC071C6D5C37D9E3169E0C89153094 /* Keychain.swift */,
+				B69AB4720E52E2567C67A6C9B8BB367F /* KeychainQueryConvertible.swift */,
+				50FE44C14B668B73BF07D29C3E5F727B /* MigrationResult.swift */,
+				288BCCF3DB358031974C7F8BC184A0CA /* SecItem.swift */,
+				982E22CDD61A66B3208E9180D42084A5 /* SecureEnclave.swift */,
+				8696156976F696C7536CF6E59330DDBF /* SecureEnclaveAccessControl.swift */,
+				1934739399E6A4D8F7AB3D764E2BA660 /* SecureEnclaveSinglePromptValet.swift */,
+				F60079601392647811B533766ECF944E /* SecureEnclaveValet.swift */,
+				80EAFD42FDF4C74570AA9B75BA6001AB /* Service.swift */,
+				F8E45D5529E8B229EE523C1DE4CA22B9 /* Valet.h */,
+				FC16BA33B68FB350674D07775F5CA8B2 /* Valet.swift */,
+				408E7A239ECDB62EE4FA2CF087902116 /* Support Files */,
+			);
+			name = Valet;
+			path = Valet;
+			sourceTree = "<group>";
+		};
+		408E7A239ECDB62EE4FA2CF087902116 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEB4A7B5B9BEC141DD661178EF544BBA /* Info.plist */,
+				9B445EF0CCA7A1136B8FF5B0A6C56026 /* Valet.modulemap */,
+				70E4D90EA8412A790378DEB3F2327CC8 /* Valet.xcconfig */,
+				517CDD75407507FF3E23785CE939199C /* Valet-dummy.m */,
+				879F52468D51615D70F233D7F31C2714 /* Valet-prefix.pch */,
+				F40C17C30339A7441CDDBD4493E41C81 /* Valet-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Valet";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F990579C2E52276FD3C28227B49D60B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F990579C2E52276FD3C28227B49D60B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */,
+				C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		51E0260833BEA67A8327B7C615A35DB7 /* Pods-ValetAndMorty */ = {
+			isa = PBXGroup;
+			children = (
+				194F98D01FAC3C377CFEF15AE0ADEDE3 /* Info.plist */,
+				3E3C5EAE61562797A8BA6EF38CF56424 /* Pods-ValetAndMorty.modulemap */,
+				3A40595CE5293BEF7DF32A8EA814F570 /* Pods-ValetAndMorty-acknowledgements.markdown */,
+				B1C9A6A6BB27529A44B0107A9D853741 /* Pods-ValetAndMorty-acknowledgements.plist */,
+				7F5EC299A52DBFF0517AD320ED176548 /* Pods-ValetAndMorty-dummy.m */,
+				58C90312CFF221EE986012A8BB481792 /* Pods-ValetAndMorty-frameworks.sh */,
+				AB9CC8784077DEB305C69E480D6ACF01 /* Pods-ValetAndMorty-resources.sh */,
+				01DC3E6DF9F6C9F4D4EF26D36AF3E33D /* Pods-ValetAndMorty-umbrella.h */,
+				34485544AF714461462A3E3F0D081B16 /* Pods-ValetAndMorty.debug.xcconfig */,
+				ABEB4A174E30622BD632AEEACD246D31 /* Pods-ValetAndMorty.release.xcconfig */,
+			);
+			name = "Pods-ValetAndMorty";
+			path = "Target Support Files/Pods-ValetAndMorty";
+			sourceTree = "<group>";
+		};
+		72BC039B84B3162D17620CE63BBCBDE7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				51E0260833BEA67A8327B7C615A35DB7 /* Pods-ValetAndMorty */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				D66C31044946F666C0F6D44249A63AC1 /* Pods */,
+				1BD38C06370CBB0F2DE8EC0DF95546E2 /* Products */,
+				72BC039B84B3162D17620CE63BBCBDE7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D66C31044946F666C0F6D44249A63AC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D5FB3C58F55DADFD5FF7ECF038B5C60 /* Valet */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1466098854D5E737AC83159E68BA8982 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD2781467C9A60938E3968489130E79 /* Valet-umbrella.h in Headers */,
+				5C5A60A06B791D64C36AC3A2D56FF6A8 /* Valet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5F66223C57FED95BF7B9047AFDDBD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AABEE27273EE932B7E152E05149DEDF /* Pods-ValetAndMorty-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		93B2C46406E0BD9F7A6CF02267D31D76 /* Valet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9157D7CB7EDB3226EB743BBD4BADC79 /* Build configuration list for PBXNativeTarget "Valet" */;
+			buildPhases = (
+				F695170A572593AB5A592E3678E96E36 /* Sources */,
+				F59B0CF617338D7B8AA141CB89051109 /* Frameworks */,
+				1466098854D5E737AC83159E68BA8982 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Valet;
+			productName = Valet;
+			productReference = 2980DC2A1361239A98BA94AD66EC4195 /* Valet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC4A20820ADB7D886DF0807171A8918D /* Pods-ValetAndMorty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 338E1504D386C8117E172AA04AD2CEE8 /* Build configuration list for PBXNativeTarget "Pods-ValetAndMorty" */;
+			buildPhases = (
+				3B938732D0AFF9FB1CBA26096AF68A8C /* Sources */,
+				4F6A53FF581BCD0FD8F3FBB707BB697A /* Frameworks */,
+				FB5F66223C57FED95BF7B9047AFDDBD6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38CC4139BB420B4CC4D529F9A791C264 /* PBXTargetDependency */,
+			);
+			name = "Pods-ValetAndMorty";
+			productName = "Pods-ValetAndMorty";
+			productReference = 4AFFE523B92A56DBA3FDF4F4E352EED2 /* Pods_ValetAndMorty.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1BD38C06370CBB0F2DE8EC0DF95546E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC4A20820ADB7D886DF0807171A8918D /* Pods-ValetAndMorty */,
+				93B2C46406E0BD9F7A6CF02267D31D76 /* Valet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B938732D0AFF9FB1CBA26096AF68A8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43ACCC3CFCB056BCA32109BAFEEBF132 /* Pods-ValetAndMorty-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F695170A572593AB5A592E3678E96E36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D699493C537B0B95B2726AFE8FD2A92 /* Accessibility.swift in Sources */,
+				56F6ACFD2DDBF0C199B1455DA37F5ADA /* CloudAccessibility.swift in Sources */,
+				38AB459AC6619B9AD09422128E1E23A1 /* Configuration.swift in Sources */,
+				90106BF996996A6B99DD1ED1DA5686F6 /* ErrorHandler.swift in Sources */,
+				AE75A651B941BEF0D859B7F2DA296EF4 /* Identifier.swift in Sources */,
+				967EA8A2B5A551B2736738EBE622A932 /* Keychain.swift in Sources */,
+				DE4E6DB797408814E97674FFB0B5CFB5 /* KeychainQueryConvertible.swift in Sources */,
+				B728A4D9ED0C2F156E8159E22BB779EB /* MigrationResult.swift in Sources */,
+				3E249788B9B5E347BA6B0A3FA08C32EC /* SecItem.swift in Sources */,
+				0B50B306C494C2D0EA34C736FF78FA9F /* SecureEnclave.swift in Sources */,
+				758898215E286EDCF8356A840A46F7FB /* SecureEnclaveAccessControl.swift in Sources */,
+				A236ECA0ED0DCE032D497EC0A96BF681 /* SecureEnclaveSinglePromptValet.swift in Sources */,
+				C6B65537D061C8ABDEE0517224E50B2F /* SecureEnclaveValet.swift in Sources */,
+				119FEB43819A01F9F47ED6A09B049AC1 /* Service.swift in Sources */,
+				061169C1DDD4914E9D85CDB77DE38780 /* Valet-dummy.m in Sources */,
+				ED57B7FC5380A09EAC8F8C26BB2E2F20 /* Valet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38CC4139BB420B4CC4D529F9A791C264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Valet;
+			target = 93B2C46406E0BD9F7A6CF02267D31D76 /* Valet */;
+			targetProxy = 7C44B3BF460B15664D230A3AC380C947 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		183859F6BE719BFD9BE63CB2CFC75A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70E4D90EA8412A790378DEB3F2327CC8 /* Valet.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Valet/Valet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Valet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Valet/Valet.modulemap";
+				PRODUCT_NAME = Valet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		84804F97969349C0A92406D6F84C9ACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70E4D90EA8412A790378DEB3F2327CC8 /* Valet.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Valet/Valet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Valet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Valet/Valet.modulemap";
+				PRODUCT_NAME = Valet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BC72D693F7A8C60E3005BB0385BB5D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34485544AF714461462A3E3F0D081B16 /* Pods-ValetAndMorty.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ValetAndMorty/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ValetAndMorty/Pods-ValetAndMorty.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ValetAndMorty;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E7FC5399756A69C0299A0DC119D143CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABEB4A174E30622BD632AEEACD246D31 /* Pods-ValetAndMorty.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ValetAndMorty/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ValetAndMorty/Pods-ValetAndMorty.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ValetAndMorty;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
+				6F9224530522DD3C735EC96CF142642E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		338E1504D386C8117E172AA04AD2CEE8 /* Build configuration list for PBXNativeTarget "Pods-ValetAndMorty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC72D693F7A8C60E3005BB0385BB5D3B /* Debug */,
+				E7FC5399756A69C0299A0DC119D143CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9157D7CB7EDB3226EB743BBD4BADC79 /* Build configuration list for PBXNativeTarget "Valet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84804F97969349C0A92406D6F84C9ACF /* Debug */,
+				183859F6BE719BFD9BE63CB2CFC75A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
