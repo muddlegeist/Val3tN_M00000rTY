@@ -6,8 +6,25 @@ class SecureData
     static let kString1Key = "kString1Key"
     static let kString2Key = "kString2Key"
     
-    private static var internalShared: SecureEnclaveValet?
-    static var shared : SecureEnclaveValet?
+//    private static var internalShared: SecureEnclaveValet?
+//    static var shared : SecureEnclaveValet?
+//    {
+//        get
+//        {
+//            if internalShared == nil
+//            {
+//                if let identifier = Identifier(nonEmpty: "secure_valet")
+//                {
+//                    internalShared = SecureEnclaveValet.valet(with: identifier, accessControl: .userPresence)
+//                }
+//            }
+//
+//            return internalShared
+//        }
+//    }
+    
+    private static var internalShared: SecureEnclaveSinglePromptValet?
+    static var shared : SecureEnclaveSinglePromptValet?
     {
         get
         {
@@ -15,7 +32,7 @@ class SecureData
             {
                 if let identifier = Identifier(nonEmpty: "secure_valet")
                 {
-                    internalShared = SecureEnclaveValet.valet(with: identifier, accessControl: .userPresence)
+                    internalShared = SecureEnclaveSinglePromptValet.valet(with: identifier, accessControl: .userPresence)
                 }
             }
             
