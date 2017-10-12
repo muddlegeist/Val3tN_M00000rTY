@@ -66,6 +66,9 @@ class SecureData
             case let .success(value):
                 string1 = value
                 
+            case .userCancelled:
+                print("Supposedly, USER CANCELLED...???")
+                
             default:
                 break;
             }
@@ -84,6 +87,9 @@ class SecureData
             {
             case let .success(value):
                 string2 = value
+                
+            case .userCancelled:
+                print("Supposedly, USER CANCELLED...???")
                 
             default:
                 break;
